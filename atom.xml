@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>二次域</title>
+  <title>数理小站</title>
   
   
   <link href="https://galois1q.github.io/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>https://galois1q.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>二次域</name>
     
   </author>
   
