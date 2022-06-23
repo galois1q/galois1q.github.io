@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>classical mechanics | 数理小站</title><meta name="keywords" content="study"><meta name="author" content="二次域"><meta name="copyright" content="二次域"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="从诺特定理得到对称性作用量理论简介这一节我们来回顾一下分析力学的基础概念.分析力学的整体框架是建立在哈密顿方程或者拉格朗日方程的体系上的,而二者实际又相互联系. 对于一个粒子,我们利用广义坐标$q{_i}$及其一阶导数$\dot q{_i}$描述它某一时刻的位置和运动趋势（速度）,利用Lagrange量描述它在某一时刻的状态,当粒子随时间变化开始运动,Lagrange量也随之变化.而Lagrang">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>classical mechanics | 数理小站</title><meta name="keywords" content="study"><meta name="author" content="二次域"><meta name="copyright" content="二次域"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="从诺特定理得到对称性  作用量理论简介 这一节我们来回顾一下分析力学的基础概念.分析力学的整体框架是建立在哈密顿方程或者拉格朗日方程的体系上的, 而二者实际又相互联系. 对于一个粒子,我们利用广义坐标$q{_i}$及其一阶导数$\dot q{_i}$描述它某一时刻的位置和运动趋势（速度）,利用Lagrange量描述它在某一时刻的状态,当粒子随时间变化开始运动,Lagrange量也随之变化.而La">
 <meta property="og:type" content="article">
 <meta property="og:title" content="classical mechanics">
 <meta property="og:url" content="https://galois1q.github.io/2022/06/22/quantum-field-theory/index.html">
 <meta property="og:site_name" content="数理小站">
-<meta property="og:description" content="从诺特定理得到对称性作用量理论简介这一节我们来回顾一下分析力学的基础概念.分析力学的整体框架是建立在哈密顿方程或者拉格朗日方程的体系上的,而二者实际又相互联系. 对于一个粒子,我们利用广义坐标$q{_i}$及其一阶导数$\dot q{_i}$描述它某一时刻的位置和运动趋势（速度）,利用Lagrange量描述它在某一时刻的状态,当粒子随时间变化开始运动,Lagrange量也随之变化.而Lagrang">
+<meta property="og:description" content="从诺特定理得到对称性  作用量理论简介 这一节我们来回顾一下分析力学的基础概念.分析力学的整体框架是建立在哈密顿方程或者拉格朗日方程的体系上的, 而二者实际又相互联系. 对于一个粒子,我们利用广义坐标$q{_i}$及其一阶导数$\dot q{_i}$描述它某一时刻的位置和运动趋势（速度）,利用Lagrange量描述它在某一时刻的状态,当粒子随时间变化开始运动,Lagrange量也随之变化.而La">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
 <meta property="article:published_time" content="2022-06-22T02:29:27.000Z">
-<meta property="article:modified_time" content="2022-06-23T02:09:16.178Z">
+<meta property="article:modified_time" content="2022-06-23T02:23:06.246Z">
 <meta property="article:author" content="二次域">
 <meta property="article:tag" content="study">
 <meta name="twitter:card" content="summary">
@@ -53,7 +53,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2022-06-23 10:09:16'
+  postUpdate: '2022-06-23 10:23:06'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -143,21 +143,35 @@
     }
     detectApple()
     })(window)</script><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="数理小站" type="application/atom+xml">
-</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/111.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">数理小站</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">classical mechanics</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-06-22T02:29:27.000Z" title="发表于 2022-06-22 10:29:27">2022-06-22</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-06-23T02:09:16.178Z" title="更新于 2022-06-23 10:09:16">2022-06-23</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="classical mechanics"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="从诺特定理得到对称性"><a href="#从诺特定理得到对称性" class="headerlink" title="从诺特定理得到对称性"></a>从诺特定理得到对称性</h1><h2 id="作用量理论简介"><a href="#作用量理论简介" class="headerlink" title="作用量理论简介"></a>作用量理论简介</h2><p>这一节我们来回顾一下分析力学的基础概念.分析力学的整体框架是建立在哈密顿方程或者拉格朗日方程的体系上的,<br>而二者实际又相互联系.</p>
-<p>对于一个粒子,我们利用广义坐标$q{_i}$及其一阶导数$\dot q{_i}$描述它某一时刻的位置和运动趋势（速度）,利用Lagrange量描述它在某一时刻的状态,当粒子随时间变化开始运动,Lagrange量也随之变化.而Lagrange量随时间的累计（即积分）相当于粒子运动的某种路径,反映了粒子随时间的演化情况,我们称它为作用量.<br>从状态a到b的作用量是:<br>$S=\int_{a}^{b}L(q_i,{\dot q_i},t)dt$</p>
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/111.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">数理小站</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">classical mechanics</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-06-22T02:29:27.000Z" title="发表于 2022-06-22 10:29:27">2022-06-22</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-06-23T02:23:06.246Z" title="更新于 2022-06-23 10:23:06">2022-06-23</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="classical mechanics"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="从诺特定理得到对称性"><a class="markdownIt-Anchor" href="#从诺特定理得到对称性"></a> 从诺特定理得到对称性</h1>
+<h2 id="作用量理论简介"><a class="markdownIt-Anchor" href="#作用量理论简介"></a> 作用量理论简介</h2>
+<p>这一节我们来回顾一下分析力学的基础概念.分析力学的整体框架是建立在哈密顿方程或者拉格朗日方程的体系上的,<br />
+而二者实际又相互联系.</p>
+<p>对于一个粒子,我们利用广义坐标$q{_i}$及其一阶导数$\dot q{_i}$描述它某一时刻的位置和运动趋势（速度）,利用Lagrange量描述它在某一时刻的状态,当粒子随时间变化开始运动,Lagrange量也随之变化.而Lagrange量随时间的累计（即积分）相当于粒子运动的某种路径,反映了粒子随时间的演化情况,我们称它为作用量.<br />
+从状态a到b的作用量是:</p>
+$S=\int_{a}^{b}L(q_i,{\dot q_i},t)dt$
 <p>（其中指标i标记变量坐标分量）</p>
-<p>在分析力学中有最小作用量原理要求<br>作用量是处处极小的.即<br>$\delta S \equiv 0$<br>利用变分法可导出熟知的Euler-Lagrange 方程:<br>
+<p>在分析力学中有最小作用量原理要求<br />
+作用量是处处极小的.即</p>
+$\delta S \equiv 0$
+<p>利用变分法可导出熟知的Euler-Lagrange 方程:</p>
+
 $
     \frac{ {\rm d} }{ { {\rm d}t } }( \frac{ { \partial L } }{ { \partial {  \dot q _i} } } ) - \frac{ { \partial L } }{ { \partial {q_i} } } = 0
 $
-</p>
-<p>数”的概念描述泛函的变化,对于一个泛函$F[f(x)]$,它的泛函导数定义如下：<br>   
+
+<p>数&quot;的概念描述泛函的变化,对于一个泛函<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>F</mi><mo stretchy="false">[</mo><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">F[f(x)]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="mopen">[</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span><span class="mclose">]</span></span></span></span>,它的泛函导数定义如下：</p>
+   
    $
         \frac{{\delta {\rm{F}}}}{{\delta f(x)}} = \mathop {\lim }\limits_{^{\varepsilon  \to 0}} \frac{{F[f(x') + \varepsilon \delta (x - x')] - F[f(x')]}}{\varepsilon }
     $
-    <br>&gt;</p>
+    
 <blockquote>
-<p>利用泛函导数将最小作用量写成如下形式：<br>$\frac{{\delta S}}{{\delta {q_i}(t)}} = 0$<br>利用泛函导数展开<br>
+<p>利用泛函导数将最小作用量写成如下形式：</p>
+</blockquote>
+$\frac{{\delta S}}{{\delta {q_i}(t)}} = 0$
+<p>利用泛函导数展开</p>
+
 $
     \begin{array}{l}
     \frac{{\delta S}}{{\delta {q_i}(t)}} = \int_a^b {{\rm{du}}} [\frac{{\delta L}}{{\delta {q_i}(u)}}\frac{{\delta {q_i}(u)}}{{\delta {q_i}(t)}} + \frac{{\delta L}}{{\delta {{\dot q}_i}(u)}}\frac{{\delta {{\dot q}_i}(u)}}{{\delta {q_i}(t)}}]\\
@@ -166,14 +180,20 @@ $
     = \frac{{\delta L}}{{\delta {q_i}(u)}} - \frac{{\rm{d}}}{{{\rm{dt}}}}\frac{{\delta L}}{{\delta {{\dot q}_i}(t)}}
     \end{array}
 $
-<br>就得到了Euler-Lagrange 方程<br>
+
+<p>就得到了Euler-Lagrange 方程</p>
+
 $
     \frac{{\delta L}}{{\delta {q_i}(u)}} - \frac{{\rm{d}}}{{{\rm{dt}}}}\frac{{\delta L}}{{\delta {{\dot q}_i}(t)}} = 0
-$<br>一般情况下,可将$\delta$算子换成偏微分算子$\rm \partial$（二者的计算一 样）,就是常见形式.</p>
+$
+<p>一般情况下,可将$\delta$算子换成偏微分算子$\rm \partial$（二者的计算一 样）,就是常见形式.</p>
+<blockquote>
 <p>取Lagrange量为$L = \sum\limits_i {\frac{1}{2}m{{\dot q}_i}^2 - V({q_i})} $
-    利用E-L方程,得到$m\ddot q =  - \frac{{\partial V}}{{\partial q}}$<br>    这正是牛顿第二定律</p>
+    利用E-L方程,得到$m\ddot q =  - \frac{{\partial V}}{{\partial q}}$<br />
+这正是牛顿第二定律</p>
 </blockquote>
-<p>Euler-Lagrange方程也可以写成更加对称的形式,令<br>
+<p>Euler-Lagrange方程也可以写成更加对称的形式,令</p>
+
 $
 \begin{array}{l}
 \frac{{\partial L}}{{\partial {{\dot q}_i}}} = {p_i},\frac{{\partial L}}{{\partial {q_i}}} = {{\dot p}_i}\\
@@ -196,63 +216,92 @@ $
 $
 \frac{{{\rm d}A}}{{{\rm d}t}} = \frac{{\partial A}}{{\partial t}} + \{ {\rm H},A \} 
 $
-<br>
+
+
 $
 \{ f,g\}  = \sum\limits_i {\left( {\frac{{\partial f}}{{\partial {q_i}}}\frac{{\partial g}}{{\partial {p_i}}} - \frac{{\partial f}}{{\partial {p_i}}}\frac{{\partial g}}{{\partial {q_i}}}} \right)} 
-$<br>其中<br>
+$
+<p>其中</p>
+
 $
 f = f\left( {{{\rm{q}}_i},{p_i}} \right),g = g\left( {{{\rm{q}}_i},{p_i}} \right)
 $
-<br> 通常称$\{ f,g\} $为f和g的泊松括号,如果泊松括号为零,我们称二者是对易的.</p>
+
+<p>通常称${ f,g} $为f和g的泊松括号,如果泊松括号为零,我们称二者是对易的.</p>
 <blockquote>
 $\{ {{\rm{q}}_i},{p_j}\}  = \delta _j^i,\{ {{\rm{q}}_i},{q_j}\}  = \{ {{\rm{p}}_i},{p_j}\}  = 0$
 </blockquote>
 <p>值得注意的是,这些关系通常只在完整约束下成立,对于一类不完整约束我们需要采用Dirac括号代替Poisson括号.可参看Weinberg《lectures on quantum mechanics》第九章</p>
-<p>通俗地讲,以上公式只是在自由粒子的和一些类似于不需要讨论粒子是否会从曲面飞离或是不用考虑静不定的情形成立.之所以称之为完整约束,也是这个时候系统的自由度和广义坐标的自由度恰好相等,不会出现广义坐标作为变量冗余或是缺少.<br>这一点在二次量子化体现的更为深刻,当我们试图量子化电磁场时,电磁场的四维矢势和对应的正则动量是互相约束的,不能直接将Poisson括号变为对易子.</p>
-<p>实际上,在一般的电动力学教材中,我们也是通过Larange量密度得到Maxwell方程,因为这是一个Lorentz不变标量,变分时未引入正则动量带来约束时更为容易处理,在得到Lagrange量之后再得到Hamilton量.那为何在二次量子化时不直接使用Lagrange量处理呢？<br>本人学识浅陋,认为原因在于难以有一般的简洁方法直接从Lagrange量来量子化.</p>
+<p>通俗地讲,以上公式只是在自由粒子的和一些类似于不需要讨论粒子是否会从曲面飞离或是不用考虑静不定的情形成立.之所以称之为完整约束,也是这个时候系统的自由度和广义坐标的自由度恰好相等,不会出现广义坐标作为变量冗余或是缺少.<br />
+这一点在二次量子化体现的更为深刻,当我们试图量子化电磁场时,电磁场的四维矢势和对应的正则动量是互相约束的,不能直接将Poisson括号变为对易子.</p>
+<p>实际上,在一般的电动力学教材中,我们也是通过Larange量密度得到Maxwell方程,因为这是一个Lorentz不变标量,变分时未引入正则动量带来约束时更为容易处理,在得到Lagrange量之后再得到Hamilton量.那为何在二次量子化时不直接使用Lagrange量处理呢？<br />
+本人学识浅陋,认为原因在于难以有一般的简洁方法直接从Lagrange量来量子化.</p>
 <!-- Poisson括号构成所谓李代数这一点会在第三章进行详细讨论,即有如下关系式： -->
 <ol>
-<li>$\{ f,g\}  =  - \{ g,f\} $</li>
-<li>$\{\alpha f+\beta g ,h\}=\alpha\{f,h\}+\beta\{g,h\}$</li>
-<li>$\{f,\{g,h\}\}+\{g,\{h,f\}\}+\{h,\{g,f\}\}=0 $(Jacobi恒等式)</li>
+<li>
+$\{ f,g\}  =  - \{ g,f\} $
+</li>
+<li>
+$\{\alpha f+\beta g ,h\}=\alpha\{f,h\}+\beta\{g,h\}$
+</li>
+<li>
+$\{f,\{g,h\}\}+\{g,\{h,f\}\}+\{h,\{g,f\}\}=0 $(Jacobi恒等式)
+</li>
 </ol>
-<p>特别的:如果$A$不显含时间,即变量里面没有直接的含$t$项,则有<br>
+<p>特别的:如果$A$不显含时间,即变量里面没有直接的含$t$项,则有</p>
+
 $ 
     \{ {\rm H},A\}  = 0
 $
-<br>可以看出,一个变量不直接含时间的物理量守恒就是其和哈密顿量对易,后面将看到这种形式讨论对称性是方便的.</p>
-<h2 id="对称变换及Noether定理的导出"><a href="#对称变换及Noether定理的导出" class="headerlink" title="对称变换及Noether定理的导出"></a>对称变换及Noether定理的导出</h2><p>为了导出Noether’s theorem,我们将利用分析力学方法讨论连续对称性.我们将会看到对称性决定着守恒量.<br>实际在物理学中,这一规律是普适的.例如相位不变性导出电荷守恒,空间平移对称性导出动量守恒,甚至更广义的角度,对称性决定系统的一切.</p>
-<p>那如何描绘用数学语言描绘对称性？所谓对称性,可以看作我们改变坐标参变量下系统整体不变,即描述系统的作用量在变换对应下具有形式不变性:<br>
+  
+<p>可以看出,一个变量不直接含时间的物理量守恒就是其和哈密顿量对易,后面将看到这种形式讨论对称性是方便的.</p>
+<h2 id="对称变换及noether定理的导出"><a class="markdownIt-Anchor" href="#对称变换及noether定理的导出"></a> 对称变换及Noether定理的导出</h2>
+<p>为了导出Noether’s theorem,我们将利用分析力学方法讨论连续对称性.我们将会看到对称性决定着守恒量.<br />
+实际在物理学中,这一规律是普适的.例如相位不变性导出电荷守恒,空间平移对称性导出动量守恒,甚至更广义的角度,对称性决定系统的一切.</p>
+<p>那如何描绘用数学语言描绘对称性？所谓对称性,可以看作我们改变坐标参变量下系统整体不变,即描述系统的作用量在变换对应下具有形式不变性:</p>
+
 $
 q(t)_i \to \widetilde q(t)_i,S[q(t)_i] \to S[\widetilde q(t)_i]
 $
-<br>如果我们可以推出此时Hamilton量是形式不变的,那么作用量自然是形式不变的.<br>考虑无穷小变换下有:<br>
+
+<p>如果我们可以推出此时Hamilton量是形式不变的,那么作用量自然是形式不变的.<br />
+考虑无穷小变换下有:</p>
+
 $
     {{\rm{q}}_k} \to {{{\rm{q'}}}_k} = {{\rm{q}}_k} + \epsilon {f_k}\left( q \right)
 $
-</p>
-<p>考虑变换的Jacobi行列式我们有:<br>
+
+<p>考虑变换的Jacobi行列式我们有:</p>
+
 $
     {\Lambda _{ij}} = \frac{{\partial {{{\rm{q'}}}_i}}}{{\partial {{\rm{q}}_j}}} \simeq {\delta _{ij}} + 
 \frac{{\epsilon \partial {f_i}\left( q \right)}}{{\partial {{\rm{q}}_j}}}
 $
-<br>由此我们可以写出动量的变换关系式,<br>
+
+<p>由此我们可以写出动量的变换关系式,</p>
+
 $
     {p_i} \to \sum\limits_j {{p_j}} {\Lambda _{ji}}^{ - 1} \simeq {p_i} - \sum\limits_j {{p_j}\frac{{\epsilon \partial {f_j}\left( q \right)}}{{\partial {{\rm{q}}_i}}}} 
 $
-<br>定义$Q = \sum\limits_k {{p_k}{f_k}\left( q \right)}$,
+
+<p>定义$Q = \sum\limits_k {{p_k}{f_k}\left( q \right)}$,
 在无穷小变换下哈密顿量形式不变,即
 
 $
     {\rm H}\left( {{{{\rm{q'}}}_k},{{p'}_k}} \right) - {\rm H}\left( {{{\rm{q}}_k},{p_k}} \right) = \epsilon \left\{ {\rm H} \right.,\left. Q \right\} = 0
 $
-<br>由 $\{ {\rm H},Q\}  = 0$则Q守恒,我们的确看到在对称性下始终存在着守恒量,这就是Noether’s theorem.<br>此外,如果Lagrange量相差一个关于时间的全导数$\frac{{{\rm d}G}}{{{\rm d}t}}$,拉格朗日量或哈密顿量不是形式不变的,<br>但对Lagrange量积分,容易发现此时作用量是不变的,那么这种情况下守恒量依然存在.事实上,推导Lagrange方程中求导后E-L方程是一样的；通过与前面相似的推导可以得到守恒量形式为:<br>
+<br />
+由 $\{ {\rm H},Q\}  = 0$则Q守恒,我们的确看到在对称性下始终存在着守恒量,这就是Noether’s theorem.<br />
+此外,如果Lagrange量相差一个关于时间的全导数$\frac{{{\rm d}G}}{{{\rm d}t}}$,拉格朗日量或哈密顿量不是形式不变的,<br />
+但对Lagrange量积分,容易发现此时作用量是不变的,那么这种情况下守恒量依然存在.事实上,推导Lagrange方程中求导后E-L方程是一样的；通过与前面相似的推导可以得到守恒量形式为:</p>
+
 $
     Q = \sum\limits_k {{p_k}{f_k}\left( q \right)}  + G
 $
-</p>
-<p>值得指出的是,一般的对称性变换是容易发现的,无论是空间平移,旋转、还是CPT不变,都能自然的得到一些守恒量.<br>但有时并非那么直接就能得到对称性,这时就需要借助群论等方法进行研究发现相应的对称性；当然我们也可以猜守恒量,此时Noether定理可以起一个验证作用.</p>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://galois1q.github.io">二次域</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://galois1q.github.io/2022/06/22/quantum-field-theory/">https://galois1q.github.io/2022/06/22/quantum-field-theory/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://galois1q.github.io" target="_blank">数理小站</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/study/">study</a></div><div class="post_share"><div class="social-share" data-image="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/06/22/hello-world/"><img class="next-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Hello World</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/111.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">二次域</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%8E%E8%AF%BA%E7%89%B9%E5%AE%9A%E7%90%86%E5%BE%97%E5%88%B0%E5%AF%B9%E7%A7%B0%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text">从诺特定理得到对称性</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%9C%E7%94%A8%E9%87%8F%E7%90%86%E8%AE%BA%E7%AE%80%E4%BB%8B"><span class="toc-number">1.1.</span> <span class="toc-text">作用量理论简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E7%A7%B0%E5%8F%98%E6%8D%A2%E5%8F%8ANoether%E5%AE%9A%E7%90%86%E7%9A%84%E5%AF%BC%E5%87%BA"><span class="toc-number">1.2.</span> <span class="toc-text">对称变换及Noether定理的导出</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/06/22/quantum-field-theory/" title="classical mechanics"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="classical mechanics"/></a><div class="content"><a class="title" href="/2022/06/22/quantum-field-theory/" title="classical mechanics">classical mechanics</a><time datetime="2022-06-22T02:29:27.000Z" title="发表于 2022-06-22 10:29:27">2022-06-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/06/22/hello-world/" title="Hello World"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2022/06/22/hello-world/" title="Hello World">Hello World</a><time datetime="2022-06-22T01:55:06.725Z" title="发表于 2022-06-22 09:55:06">2022-06-22</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By 二次域</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+
+<p>值得指出的是,一般的对称性变换是容易发现的,无论是空间平移,旋转、还是CPT不变,都能自然的得到一些守恒量.<br />
+但有时并非那么直接就能得到对称性,这时就需要借助群论等方法进行研究发现相应的对称性；当然我们也可以猜守恒量,此时Noether定理可以起一个验证作用.</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://galois1q.github.io">二次域</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://galois1q.github.io/2022/06/22/quantum-field-theory/">https://galois1q.github.io/2022/06/22/quantum-field-theory/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://galois1q.github.io" target="_blank">数理小站</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/study/">study</a></div><div class="post_share"><div class="social-share" data-image="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/06/22/hello-world/"><img class="next-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Hello World</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/111.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">二次域</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%8E%E8%AF%BA%E7%89%B9%E5%AE%9A%E7%90%86%E5%BE%97%E5%88%B0%E5%AF%B9%E7%A7%B0%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text"> 从诺特定理得到对称性</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%9C%E7%94%A8%E9%87%8F%E7%90%86%E8%AE%BA%E7%AE%80%E4%BB%8B"><span class="toc-number">1.1.</span> <span class="toc-text"> 作用量理论简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E7%A7%B0%E5%8F%98%E6%8D%A2%E5%8F%8Anoether%E5%AE%9A%E7%90%86%E7%9A%84%E5%AF%BC%E5%87%BA"><span class="toc-number">1.2.</span> <span class="toc-text"> 对称变换及Noether定理的导出</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/06/22/quantum-field-theory/" title="classical mechanics"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="classical mechanics"/></a><div class="content"><a class="title" href="/2022/06/22/quantum-field-theory/" title="classical mechanics">classical mechanics</a><time datetime="2022-06-22T02:29:27.000Z" title="发表于 2022-06-22 10:29:27">2022-06-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/06/22/hello-world/" title="Hello World"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2022/06/22/hello-world/" title="Hello World">Hello World</a><time datetime="2022-06-22T01:55:06.725Z" title="发表于 2022-06-22 09:55:06">2022-06-22</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By 二次域</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
   window.MathJax = {
     tex: {
       inlineMath: [ ['$','$'], ["\\(","\\)"]],
