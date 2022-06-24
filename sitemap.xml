@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://galois1q.github.io/2022/06/22/hello-world/</loc>
+    
+    <lastmod>2022-06-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://galois1q.github.io/404/index.html</loc>
     
     <lastmod>2022-06-22</lastmod>
@@ -57,15 +66,6 @@
   
   <url>
     <loc>https://galois1q.github.io/categories/index.html</loc>
-    
-    <lastmod>2022-06-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://galois1q.github.io/2022/06/22/hello-world/</loc>
     
     <lastmod>2022-06-22</lastmod>
     
