@@ -6,7 +6,7 @@
   <link href="https://galois1q.github.io/atom.xml" rel="self"/>
   
   <link href="https://galois1q.github.io/"/>
-  <updated>2022-07-05T12:52:18.064Z</updated>
+  <updated>2022-06-27T10:37:02.534Z</updated>
   <id>https://galois1q.github.io/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>arttalk1</title>
-    <link href="https://galois1q.github.io/2022/07/05/arttalk1/"/>
-    <id>https://galois1q.github.io/2022/07/05/arttalk1/</id>
-    <published>2022-07-05T12:49:39.000Z</published>
-    <updated>2022-07-05T12:52:18.064Z</updated>
-    
-    <content type="html"><![CDATA[<!-- 引用 artitalk --><script type="text/javascript" src="https://unpkg.com/artitalk"></script><!-- 存放说说的容器 --><div id="artitalk_main"></div><script>new Artitalk({    appId: '', // Your LeanCloud appId    appKey: '' // Your LeanCloud appKey})</script><p>hello world!</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;!-- 引用 artitalk --&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;https://unpkg.com/artitalk&quot;&gt;&lt;/script&gt;
-&lt;!-- 存放说说的容器 --&gt;
-&lt;div id=&quot;artitalk_main&quot;&gt;&lt;/di</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>经典力学(一)</title>

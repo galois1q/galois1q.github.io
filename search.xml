@@ -4,19 +4,6 @@
   
     
     <entry>
-      <title>arttalk1</title>
-      <link href="/2022/07/05/arttalk1/"/>
-      <url>/2022/07/05/arttalk1/</url>
-      
-        <content type="html"><![CDATA[<!-- 引用 artitalk --><script type="text/javascript" src="https://unpkg.com/artitalk"></script><!-- 存放说说的容器 --><div id="artitalk_main"></div><script>new Artitalk({    appId: '', // Your LeanCloud appId    appKey: '' // Your LeanCloud appKey})</script><p>hello world!</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>经典力学(一)</title>
       <link href="/2022/06/22/phy1/"/>
       <url>/2022/06/22/phy1/</url>
